@@ -3,8 +3,8 @@ from flask import jsonify, make_response, abort
 
 from pymongo import MongoClient
 
-client = MongoClient("mongodb://localhost:27017/") # Local
-#client = MongoClient("mongodb://mongo:27017/") # Docker
+#client = MongoClient("mongodb://localhost:27017/") # Local
+client = MongoClient("mongodb://mongo:27017/") # Docker
 db = client.tododb
 
 def get_dict_from_mongodb():
