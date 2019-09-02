@@ -15,6 +15,5 @@ services:
                 condition: always
         ports:
             - "27017:27017"
-            
 volumes:
   data:
